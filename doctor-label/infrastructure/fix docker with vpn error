@@ -1,0 +1,38 @@
+Complete step-by-step example using PostgreSQL.
+
+While VPN is not connected, create a permanent [docker network](https://docs.docker.com/engine/reference/commandline/network_create/):
+
+    docker network create my-network --subnet 172.24.24.0/24
+
+In docker-compose file, specify network as external:
+
+Example:
+
+<pre><code>version: "2"<br>
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    volumes:
+      - ./volumes/postgres/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=dummy
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_HOST=localhost
+    <b>networks:
+      - default</b>
+    ports:
+      - "127.0.0.1:5432:5432"<br>
+<b>networks:
+  default:
+    external:
+      name: my-network</b>
+</pre></code>
+
+That's all. Now you can enable your VPN, and start/stop container as usual:
+
+    docker-compose up -d
+    docker-compose down
+
+No need to turn VPN on/off every time, or to add weird scripts as root. 

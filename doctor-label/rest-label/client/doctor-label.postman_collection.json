@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "8431b1bc-ae6b-4748-aa5c-99b70a660299",
+		"name": "doctor-label",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get labels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/labels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels"
+					]
+				},
+				"description": "Returns all the labels from the database"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"code\": \"A09\",\n        \"description\": \"Infectious gastroenteritis and colitis, unspecified\"\n    },\n    {\n        \"id\": 2,\n        \"code\": \"A64\",\n        \"description\": \"Unspecified sexually transmitted diseas\"\n    },\n    {\n        \"id\": 3,\n        \"code\": \"B300\",\n        \"description\": \"Keratoconjunctivitis due to adenoviru\"\n    },\n    {\n        \"id\": 4,\n        \"code\": \"B302\",\n        \"description\": \"Viral pharyngoconjunctiviti\"\n    },\n    {\n        \"id\": 5,\n        \"code\": \"B308\",\n        \"description\": \"Other viral conjunctiviti\"\n    },\n    {\n        \"id\": 6,\n        \"code\": \"B309\",\n        \"description\": \"Viral conjunctivitis, unspecified\"\n    },\n    {\n        \"id\": 7,\n        \"code\": \"B373\",\n        \"description\": \"Candidiasis of vulva and vagin\"\n    },\n    {\n        \"id\": 8,\n        \"code\": \"B9789\",\n        \"description\": \"Other viral agents as the cause of diseases classified elsewher\"\n    },\n    {\n        \"id\": 9,\n        \"code\": \"E860\",\n        \"description\": \"Dehydratio\"\n    },\n    {\n        \"id\": 10,\n        \"code\": \"F340\",\n        \"description\": \"Cyclothymic disorde\"\n    },\n    {\n        \"id\": 11,\n        \"code\": \"F341\",\n        \"description\": \"Dysthymic disorde\"\n    },\n    {\n        \"id\": 12,\n        \"code\": \"F39\",\n        \"description\": \"Unspecified mood [affective] disorde\"\n    },\n    {\n        \"id\": 13,\n        \"code\": \"F411\",\n        \"description\": \"Generalized anxiety disorde\"\n    },\n    {\n        \"id\": 14,\n        \"code\": \"F418\",\n        \"description\": \"Other specified anxiety disorder\"\n    },\n    {\n        \"id\": 15,\n        \"code\": \"F419\",\n        \"description\": \"Anxiety disorder, unspecified\"\n    },\n    {\n        \"id\": 16,\n        \"code\": \"F4321\",\n        \"description\": \"Adjustment disorder with depressed moo\"\n    },\n    {\n        \"id\": 17,\n        \"code\": \"G43001\",\n        \"description\": \"Migraine without aura, not intractable, with status migrainosu\"\n    },\n    {\n        \"id\": 18,\n        \"code\": \"G43009\",\n        \"description\": \"Migraine without aura, not intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 19,\n        \"code\": \"G43019\",\n        \"description\": \"Migraine without aura, intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 20,\n        \"code\": \"G43501\",\n        \"description\": \"Persistent migraine aura without cerebral infarction, not intractable, with status migrainosu\"\n    },\n    {\n        \"id\": 21,\n        \"code\": \"G43509\",\n        \"description\": \"Persistent migraine aura without cerebral infarction, not intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 22,\n        \"code\": \"G43519\",\n        \"description\": \"Persistent migraine aura without cerebral infarction, intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 23,\n        \"code\": \"G43701\",\n        \"description\": \"Chronic migraine without aura, not intractable, with status migrainosu\"\n    },\n    {\n        \"id\": 24,\n        \"code\": \"G43709\",\n        \"description\": \"Chronic migraine without aura, not intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 25,\n        \"code\": \"G43711\",\n        \"description\": \"Chronic migraine without aura, intractable, with status migrainosu\"\n    },\n    {\n        \"id\": 26,\n        \"code\": \"G43719\",\n        \"description\": \"Chronic migraine without aura, intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 27,\n        \"code\": \"G43809\",\n        \"description\": \"Other migraine, not intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 28,\n        \"code\": \"G43811\",\n        \"description\": \"Other migraine, intractable, with status migrainosu\"\n    },\n    {\n        \"id\": 29,\n        \"code\": \"G43819\",\n        \"description\": \"Other migraine, intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 30,\n        \"code\": \"G43829\",\n        \"description\": \"Menstrual migraine, not intractable, without status migrainosu\"\n    },\n    {\n        \"id\": 31,\n        \"code\": \"G43909\",\n        \"description\": \"Migraine, unspecified, not intractable, without status migrainosus\"\n    },\n    {\n        \"id\": 32,\n        \"code\": \"G43911\",\n        \"description\": \"Migraine, unspecified, intractable, with status migrainosus\"\n    },\n    {\n        \"id\": 33,\n        \"code\": \"G43919\",\n        \"description\": \"Migraine, unspecified, intractable, without status migrainosus\"\n    },\n    {\n        \"id\": 34,\n        \"code\": \"G44209\",\n        \"description\": \"Tension-type headache, unspecified, not intractabl\"\n    },\n    {\n        \"id\": 35,\n        \"code\": \"G44219\",\n        \"description\": \"Episodic tension-type headache, not intractable\"\n    },\n    {\n        \"id\": 36,\n        \"code\": \"G4700\",\n        \"description\": \"Insomnia, unspecified\"\n    },\n    {\n        \"id\": 37,\n        \"code\": \"G4701\",\n        \"description\": \"Insomnia due to medical conditio\"\n    },\n    {\n        \"id\": 38,\n        \"code\": \"G5600\",\n        \"description\": \"Carpal tunnel syndrome, unspecified upper limb\"\n    },\n    {\n        \"id\": 39,\n        \"code\": \"H10029\",\n        \"description\": \"Other mucopurulent conjunctivitis, unspecified eye\"\n    },\n    {\n        \"id\": 40,\n        \"code\": \"H1033\",\n        \"description\": \"Unspecified acute conjunctivitis, bilateral\"\n    },\n    {\n        \"id\": 41,\n        \"code\": \"H1044\",\n        \"description\": \"Vernal conjunctiviti\"\n    },\n    {\n        \"id\": 42,\n        \"code\": \"H1045\",\n        \"description\": \"Other chronic allergic conjunctiviti\"\n    },\n    {\n        \"id\": 43,\n        \"code\": \"H10509\",\n        \"description\": \"Unspecified blepharoconjunctivitis, unspecified eye\"\n    },\n    {\n        \"id\": 44,\n        \"code\": \"H10819\",\n        \"description\": \"Pingueculitis, unspecified eye\"\n    },\n    {\n        \"id\": 45,\n        \"code\": \"H1089\",\n        \"description\": \"Other conjunctiviti\"\n    },\n    {\n        \"id\": 46,\n        \"code\": \"H109\",\n        \"description\": \"Unspecified conjunctiviti\"\n    },\n    {\n        \"id\": 47,\n        \"code\": \"H6020\",\n        \"description\": \"Malignant otitis externa, unspecified ear\"\n    },\n    {\n        \"id\": 48,\n        \"code\": \"H60339\",\n        \"description\": \"Swimmers ear, unspecified ear\"\n    },\n    {\n        \"id\": 49,\n        \"code\": \"H60399\",\n        \"description\": \"Other infective otitis externa, unspecified ear\"\n    },\n    {\n        \"id\": 50,\n        \"code\": \"H6500\",\n        \"description\": \"Acute serous otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 51,\n        \"code\": \"H65119\",\n        \"description\": \"Acute and subacute allergic otitis media (mucoid) (sanguinous) (serous), unspecified ear\"\n    },\n    {\n        \"id\": 52,\n        \"code\": \"H65199\",\n        \"description\": \"Other acute nonsuppurative otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 53,\n        \"code\": \"H6520\",\n        \"description\": \"Chronic serous otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 54,\n        \"code\": \"H65499\",\n        \"description\": \"Other chronic nonsuppurative otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 55,\n        \"code\": \"H6590\",\n        \"description\": \"Unspecified nonsuppurative otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 56,\n        \"code\": \"H66009\",\n        \"description\": \"Acute suppurative otitis media without spontaneous rupture of ear drum, unspecified ear\"\n    },\n    {\n        \"id\": 57,\n        \"code\": \"H66019\",\n        \"description\": \"Acute suppurative otitis media with spontaneous rupture of ear drum, unspecified ear\"\n    },\n    {\n        \"id\": 58,\n        \"code\": \"H663X9\",\n        \"description\": \"Other chronic suppurative otitis media, unspecified ear\"\n    },\n    {\n        \"id\": 59,\n        \"code\": \"H6640\",\n        \"description\": \"Suppurative otitis media, unspecified, unspecified ea\"\n    },\n    {\n        \"id\": 60,\n        \"code\": \"H6690\",\n        \"description\": \"Otitis media, unspecified, unspecified ea\"\n    },\n    {\n        \"id\": 61,\n        \"code\": \"J00\",\n        \"description\": \"Acute nasopharyngitis [common cold\"\n    },\n    {\n        \"id\": 62,\n        \"code\": \"J0100\",\n        \"description\": \"Acute maxillary sinusitis, unspecified\"\n    },\n    {\n        \"id\": 63,\n        \"code\": \"J0110\",\n        \"description\": \"Acute frontal sinusitis, unspecified\"\n    },\n    {\n        \"id\": 64,\n        \"code\": \"J0130\",\n        \"description\": \"Acute sphenoidal sinusitis, unspecified\"\n    },\n    {\n        \"id\": 65,\n        \"code\": \"J0140\",\n        \"description\": \"Acute pansinusitis, unspecified\"\n    },\n    {\n        \"id\": 66,\n        \"code\": \"J0190\",\n        \"description\": \"Acute sinusitis, unspecified\"\n    },\n    {\n        \"id\": 67,\n        \"code\": \"J029\",\n        \"description\": \"Acute pharyngitis, unspecified\"\n    },\n    {\n        \"id\": 68,\n        \"code\": \"J060\",\n        \"description\": \"Acute laryngopharyngiti\"\n    },\n    {\n        \"id\": 69,\n        \"code\": \"J069\",\n        \"description\": \"Acute upper respiratory infection, unspecified\"\n    },\n    {\n        \"id\": 70,\n        \"code\": \"J209\",\n        \"description\": \"Acute bronchitis, unspecified\"\n    },\n    {\n        \"id\": 71,\n        \"code\": \"J301\",\n        \"description\": \"Allergic rhinitis due to polle\"\n    },\n    {\n        \"id\": 72,\n        \"code\": \"J3081\",\n        \"description\": \"Allergic rhinitis due to animal (cat) (dog) hair and dande\"\n    },\n    {\n        \"id\": 73,\n        \"code\": \"J36\",\n        \"description\": \"Peritonsillar absces\"\n    },\n    {\n        \"id\": 74,\n        \"code\": \"J40\",\n        \"description\": \"Bronchitis, not specified as acute or chronic\"\n    },\n    {\n        \"id\": 75,\n        \"code\": \"J411\",\n        \"description\": \"Mucopurulent chronic bronchiti\"\n    },\n    {\n        \"id\": 76,\n        \"code\": \"J42\",\n        \"description\": \"Unspecified chronic bronchiti\"\n    },\n    {\n        \"id\": 77,\n        \"code\": \"J45901\",\n        \"description\": \"Unspecified asthma with (acute) exacerbatio\"\n    },\n    {\n        \"id\": 78,\n        \"code\": \"J45902\",\n        \"description\": \"Unspecified asthma with status asthmaticu\"\n    },\n    {\n        \"id\": 79,\n        \"code\": \"K210\",\n        \"description\": \"Gastro-esophageal reflux disease with esophagiti\"\n    },\n    {\n        \"id\": 80,\n        \"code\": \"K219\",\n        \"description\": \"Gastro-esophageal reflux disease without esophagiti\"\n    },\n    {\n        \"id\": 81,\n        \"code\": \"K2900\",\n        \"description\": \"Acute gastritis without bleedin\"\n    },\n    {\n        \"id\": 82,\n        \"code\": \"K2920\",\n        \"description\": \"Alcoholic gastritis without bleedin\"\n    },\n    {\n        \"id\": 83,\n        \"code\": \"K2960\",\n        \"description\": \"Other gastritis without bleedin\"\n    },\n    {\n        \"id\": 84,\n        \"code\": \"K5900\",\n        \"description\": \"Constipation, unspecified\"\n    },\n    {\n        \"id\": 85,\n        \"code\": \"K5901\",\n        \"description\": \"Slow transit constipatio\"\n    },\n    {\n        \"id\": 86,\n        \"code\": \"K5902\",\n        \"description\": \"Outlet dysfunction constipatio\"\n    },\n    {\n        \"id\": 87,\n        \"code\": \"K649\",\n        \"description\": \"Unspecified hemorrhoid\"\n    },\n    {\n        \"id\": 88,\n        \"code\": \"K8019\",\n        \"description\": \"Calculus of gallbladder with other cholecystitis with obstructio\"\n    },\n    {\n        \"id\": 89,\n        \"code\": \"K8020\",\n        \"description\": \"Calculus of gallbladder without cholecystitis without obstructio\"\n    },\n    {\n        \"id\": 90,\n        \"code\": \"K8021\",\n        \"description\": \"Calculus of gallbladder without cholecystitis with obstructio\"\n    },\n    {\n        \"id\": 91,\n        \"code\": \"K8042\",\n        \"description\": \"Calculus of bile duct with acute cholecystitis without obstructio\"\n    },\n    {\n        \"id\": 92,\n        \"code\": \"K8050\",\n        \"description\": \"Calculus of bile duct without cholangitis or cholecystitis without obstructio\"\n    },\n    {\n        \"id\": 93,\n        \"code\": \"K8051\",\n        \"description\": \"Calculus of bile duct without cholangitis or cholecystitis with obstructio\"\n    },\n    {\n        \"id\": 94,\n        \"code\": \"L240\",\n        \"description\": \"Irritant contact dermatitis due to detergent\"\n    },\n    {\n        \"id\": 95,\n        \"code\": \"L242\",\n        \"description\": \"Irritant contact dermatitis due to solvent\"\n    },\n    {\n        \"id\": 96,\n        \"code\": \"L250\",\n        \"description\": \"Unspecified contact dermatitis due to cosmetic\"\n    },\n    {\n        \"id\": 97,\n        \"code\": \"L251\",\n        \"description\": \"Unspecified contact dermatitis due to drugs in contact with ski\"\n    },\n    {\n        \"id\": 98,\n        \"code\": \"L253\",\n        \"description\": \"Unspecified contact dermatitis due to other chemical product\"\n    },\n    {\n        \"id\": 99,\n        \"code\": \"L255\",\n        \"description\": \"Unspecified contact dermatitis due to plants, except food\"\n    },\n    {\n        \"id\": 100,\n        \"code\": \"L259\",\n        \"description\": \"Unspecified contact dermatitis, unspecified cause\"\n    },\n    {\n        \"id\": 101,\n        \"code\": \"M25539\",\n        \"description\": \"Pain in unspecified wris\"\n    },\n    {\n        \"id\": 102,\n        \"code\": \"M5430\",\n        \"description\": \"Sciatica, unspecified side\"\n    },\n    {\n        \"id\": 103,\n        \"code\": \"N730\",\n        \"description\": \"Acute parametritis and pelvic celluliti\"\n    },\n    {\n        \"id\": 104,\n        \"code\": \"N733\",\n        \"description\": \"Female acute pelvic peritoniti\"\n    },\n    {\n        \"id\": 105,\n        \"code\": \"N739\",\n        \"description\": \"Female pelvic inflammatory disease, unspecified\"\n    },\n    {\n        \"id\": 106,\n        \"code\": \"N912\",\n        \"description\": \"Amenorrhea, unspecified\"\n    },\n    {\n        \"id\": 107,\n        \"code\": \"N920\",\n        \"description\": \"Excessive and frequent menstruation with regular cycl\"\n    },\n    {\n        \"id\": 108,\n        \"code\": \"N921\",\n        \"description\": \"Excessive and frequent menstruation with irregular cycl\"\n    },\n    {\n        \"id\": 109,\n        \"code\": \"N924\",\n        \"description\": \"Excessive bleeding in the premenopausal perio\"\n    },\n    {\n        \"id\": 110,\n        \"code\": \"N930\",\n        \"description\": \"Postcoital and contact bleedin\"\n    },\n    {\n        \"id\": 111,\n        \"code\": \"N946\",\n        \"description\": \"Dysmenorrhea, unspecified\"\n    },\n    {\n        \"id\": 112,\n        \"code\": \"R079\",\n        \"description\": \"Chest pain, unspecified\"\n    },\n    {\n        \"id\": 113,\n        \"code\": \"R109\",\n        \"description\": \"Unspecified abdominal pai\"\n    },\n    {\n        \"id\": 114,\n        \"code\": \"R21\",\n        \"description\": \"Rash and other nonspecific skin eruptio\"\n    },\n    {\n        \"id\": 115,\n        \"code\": \"R42\",\n        \"description\": \"Dizziness and giddines\"\n    },\n    {\n        \"id\": 116,\n        \"code\": \"S53449A\",\n        \"description\": \"Ulnar collateral ligament sprain of unspecified elbow, initial encounter\"\n    },\n    {\n        \"id\": 117,\n        \"code\": \"S63519A\",\n        \"description\": \"Sprain of carpal joint of unspecified wrist, initial encounter\"\n    },\n    {\n        \"id\": 118,\n        \"code\": \"S63599A\",\n        \"description\": \"Other specified sprain of unspecified wrist, initial encounter\"\n    },\n    {\n        \"id\": 119,\n        \"code\": \"S638X9A\",\n        \"description\": \"Sprain of other part of unspecified wrist and hand, initial encounter\"\n    },\n    {\n        \"id\": 120,\n        \"code\": \"S93419A\",\n        \"description\": \"Sprain of calcaneofibular ligament of unspecified ankle, initial encounter\"\n    },\n    {\n        \"id\": 121,\n        \"code\": \"S93429A\",\n        \"description\": \"Sprain of deltoid ligament of unspecified ankle, initial encounter\"\n    },\n    {\n        \"id\": 122,\n        \"code\": \"S93439A\",\n        \"description\": \"Sprain of tibiofibular ligament of unspecified ankle, initial encounter\"\n    }\n]"
+				},
+				{
+					"name": "No labels",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get label",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/labels/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels",
+						"{id}"
+					]
+				},
+				"description": "Returns a label for a given identifier"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "89"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"code\": \"A09\",\n    \"description\": \"Infectious gastroenteritis and colitis, unspecified\"\n}"
+				},
+				{
+					"name": "No label",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels/300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels",
+								"300"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update label",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"code\": \"2\",\n    \"description\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/labels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels"
+					]
+				},
+				"description": "Updates an exiting label"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"code\": \"DDDD\",\n    \"description\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"code\": \"DDDD\",\n    \"description\": \"string\"\n}"
+				},
+				{
+					"name": "Bad request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"code\": \"2\",\n    \"description\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "validation-exception",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"classViolations\": [],\n    \"parameterViolations\": [\n        {\n            \"constraintType\": \"PARAMETER\",\n            \"message\": \"el tamaño debe estar entre 3 y 50\",\n            \"path\": \"updateLabel.label.code\",\n            \"value\": \"2\"\n        }\n    ],\n    \"propertyViolations\": [],\n    \"returnValueViolations\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Create label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"code\": \"A09\",\n  \"description\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/labels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels"
+					]
+				},
+				"description": "Creates a valid label"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"3X4MPL3\",\n  \"description\": \"Example Description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8083/api/labels/124"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Bad request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"1\",\n  \"description\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "validation-exception",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"classViolations\": [],\n    \"parameterViolations\": [\n        {\n            \"constraintType\": \"PARAMETER\",\n            \"message\": \"el tamaño debe estar entre 3 y 50\",\n            \"path\": \"createLabel.label.code\",\n            \"value\": \"1\"\n        }\n    ],\n    \"propertyViolations\": [],\n    \"returnValueViolations\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete label",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/labels/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels",
+						"{id}"
+					]
+				},
+				"description": "Deletes an exiting label"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels",
+								"1"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/labels/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"labels",
+						"hello"
+					]
+				},
+				"description": "Returns all the labels from the database"
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/labels/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"labels",
+								"hello"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "hello"
+				}
+			]
+		}
+	]
+}

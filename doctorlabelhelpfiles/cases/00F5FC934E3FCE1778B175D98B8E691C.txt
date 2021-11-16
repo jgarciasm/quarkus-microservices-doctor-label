@@ -1,0 +1,10 @@
+Patient  is an 42 year old  male.    Chief Complaint: Establish Care and Physical    HPI      Hemorrhoids  Bothersome  Comes and goes  Especially with sedentary life style  Recently worse  Couple nights where almost wakes patient up  Gets intermittently constipated  High fiber diet    Patient Active Problem    Diagnoses Code
+ -  Hemorrhoids 455.6E       No outpatient prescriptions have been marked as taking for the  encounter (Office Visit) with ,  C.     Allergies   Allergen Reactions
+ -  Pcn (Penicillins)
+ -  Morphine        No past medical history on file.  Past Surgical History   Procedure Date
+ -  Hx knee surgery      Arthroscopy age 15 for torn meniscus       Family History   Problem Relation  of Onset
+ -  Cancer Mother      Breast
+ -  Hypertension Mother
+ -  Hypertension Father      History   Substance Use Topics
+ -  Smoking status: Never Smoker
+ -  Smokeless tobacco: Not on file

@@ -1,0 +1,17 @@
+version: "3"
+services:
+    database:
+        image: "postgres:11.2"
+        container_name: "doctor-labelling-database"
+        networks:
+            - default
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./db-init/initialize-databases.sql:/docker-entrypoint-initdb.d/init.sql
+
+networks:
+  default:
+    external:
+      name: my-network
+
